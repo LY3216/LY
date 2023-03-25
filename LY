@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>W3Cschool教程(w3cschool.cn)</title> 
+</head> 
+<body> 
+
+<video id="myVideo" width="320" height="240" controls>
+	<source src="https://al.flv.huya.com/src/1352054947-1352054947-5807031779760013312-2704233350-10057-A-0-1.flv?wsSecret=f40a0c90689d021c7b2d5e39fbfc5dee&wsTime=63f59840&seqid=3812964972701&ctype=tars_mobile&ver=1&txyp=o%3Ayzeic1%3B&fs=bgct&sphdcdn=al_7-tx_3-js_3-ws_7-bd_2-hw_2&sphdDC=huya&sphd=264_*-265_*&exsphd=264_500,264_2000,&t=103&ratio=2000&uid=2136011684291&uuid=4029704972&t=103&sv=2110211124" type="video/mp4">
+  	<source src="/statics/demosource/movie.ogg" type="video/ogg">
+  	您的浏览器不支持 video 标签。
+</video><br>
+<button onclick="getCurTime()" type="button">获取当前时间点</button>
+<button onclick="setCurTime()" type="button">设置时间位置为5秒</button>
+<script>
+var x = document.getElementById("myVideo");
+function getCurTime(){ 
+	alert(x.currentTime);
+} 
+function setCurTime(){ 
+	x.currentTime=x.currentTime - 5000;
+
+} 
+</script> 
+
+</body> 
+</html>
